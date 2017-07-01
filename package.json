@@ -1,0 +1,42 @@
+{
+  "name": "rocky-horror-ipsum",
+  "version": "1.0.0",
+  "description": "Generate lorem ipsum using quotes from one of my favorite films.",
+  "main": "index.js",
+  "repository": "https://github.com/aaroncraigongithub/rocky-horror-ipsum.git",
+  "author": "Aaron Craig <aaron@aaroncraig.com>",
+  "license": "MIT",
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint ./index.js ./app",
+    "test": "jest",
+    "webpack": "webpack --config webpack.config.js --progress --colors",
+    "start": "webpack-dev-server --port 3000 --content-base ./build --config webpack.config.dev.js --progress --inline --hot --colors --quiet --history-api-fallback"
+  },
+  "dependencies": {
+    "material-ui": "^0.18.5",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-tap-event-plugin": "^2.0.1",
+    "underscore.string": "^3.3.4"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-import-resolver-webpack": "^0.8.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "file-loader": "^0.11.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}
